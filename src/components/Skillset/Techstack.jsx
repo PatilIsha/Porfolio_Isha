@@ -7,12 +7,12 @@ import {
   DiGit,
 } from "react-icons/di";
 import {
-  SiMaterialui,
+  SiMui,
   SiGraphql,
   SiSolidity,
   SiRedux,
-  SiMongodb,
-  SiHtml5
+  SiMongodb,SiHtml5 ,
+  SiOracle, SiSpring, SiPhp, SiMysql
 } from "react-icons/si";
 
 const Techstack = () => {
@@ -31,6 +31,18 @@ const Techstack = () => {
         <DiReact />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
+        <SiOracle title="Java" /> {/* Use Oracle icon for Java */}
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiSpring title="Spring" />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPhp title="PHP" />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiMysql title="SQL" />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
         <SiRedux />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
@@ -43,7 +55,7 @@ const Techstack = () => {
         <SiSolidity />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiMaterialui />
+      <SiMui />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />

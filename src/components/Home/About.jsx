@@ -21,11 +21,11 @@ const About = () => {
                   LET ME <span className="yellow"> INTRODUCE </span> MYSELF
                 </h1>
                 <p className="home-about-body">
-                 Hi, my name is <span className="yellow">Md Abu Bakkar Siddiqe Sajib </span>
-                 and I'm from <span className="yellow"> Dhaka, Bangladesh.</span>
+                 Hi, my name is <span className="yellow">Isha Patil </span>
+                 and I'm from <span className="yellow"> Jalgaon , Maharashtra .</span>
                 <br />
                 <br />
-                I recently graduated with a Bachelor's degree in Computer Science and Engineering in 2021.
+                I am pursuing Engineering degree in Computer Science and Engineering .
                 <br />
                 <br />
                   As a
@@ -33,9 +33,9 @@ const About = () => {
                   I enjoy tackling new challenges and continuously expanding my skillset.
                   <br />
                   <br />I am proficient in
-                    <b className="yellow"> Javascript, </b>
-                    as well as have knowledge in programming languages such as C, Java, Python,
-                  <b className="yellow"> GraphQL, and Solidity.</b>
+                    <b className="yellow"> Java, </b>
+                    as well as have knowledge in programming languages such as C, Javascript, SQL,Spring,
+                  <b className="yellow"> PHP,Laravel,React.</b>
                   <br />
                   <br />
                   I have a passion for working
@@ -54,9 +54,9 @@ const About = () => {
                   <br />
                   I am also interested in building new
                   <i>
-                    <b className="yellow"> Web Technologies and Products, </b>
-                    as well as exploring areas related to
-                    <b className="yellow"> Artificial Intelligence.</b>
+                    <b className="yellow"> Web Technologies and Products. </b>
+                    as well as i also do 
+                    <b className="yellow"> FreeLancing.</b>
                   </i>
                   <br />
                   
@@ -77,7 +77,7 @@ const About = () => {
                 <ul className="home-about-social-links">
                   <li className="social-icons">
                     <a
-                      href="https://github.com/19sajib"
+                      href="https://github.com/PatilIsha/"
                       target="_blank"
                       rel="noreferrer"
                       className="icon-colour  home-social-icons"
@@ -99,7 +99,7 @@ const About = () => {
                   </li>
                   <li className="social-icons">
                     <a
-                      href="https://www.linkedin.com/in/19sajib/"
+                      href="https://www.linkedin.com/in/isha-patil-0a2290213/"
                       target="_blank"
                       rel="noreferrer"
                       className="icon-colour  home-social-icons"
@@ -110,7 +110,7 @@ const About = () => {
                   </li>
                   <li className="social-icons">
                     <a
-                      href="https://leetcode.com/19sajib/"
+                      href="https://leetcode.com/u/Isha_543/"
                       target="_blank"
                       rel="noreferrer"
                       className="icon-colour home-social-icons"
