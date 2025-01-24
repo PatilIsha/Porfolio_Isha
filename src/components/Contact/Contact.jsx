@@ -24,7 +24,7 @@ const Contact = () => {
         } else {
             try {
                 // Send the form data to the backend server
-                const response = await fetch('http://localhost:5000/api/contacts', {
+                const response = await fetch('https://backend-portflio.onrender.com/api/contact', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -35,7 +35,7 @@ const Contact = () => {
                         message: formData.message,
                     }),
                 });
-
+               
                 if (response.ok) {
                     setDone(true);
                     setFormData({});
