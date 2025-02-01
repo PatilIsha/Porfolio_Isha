@@ -3,18 +3,18 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../../assets/sLogo.png";
-// import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-// import { CgGitFork } from "react-icons/cg";
 import {
-  // AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
-  AiOutlineContacts
+  AiOutlineContacts,
+  AiOutlineMail,
+  AiOutlinePhone,
+  AiOutlineBook,
+  AiOutlineTeam,
 } from "react-icons/ai";
-import { GiSkills } from "react-icons/gi"
+import { GiSkills } from "react-icons/gi";
 import { CgFileDocument } from "react-icons/cg";
-
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -81,6 +81,28 @@ function NavBar() {
                 Projects
               </Nav.Link>
             </Nav.Item>
+            {/* Education */}
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/education"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlineBook style={{ marginBottom: "2px" }} /> Education
+              </Nav.Link>
+            </Nav.Item>
+
+            {/* Work Experience */}
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/work-experience"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlineTeam style={{ marginBottom: "2px" }} /> Work Experience
+              </Nav.Link>
+            </Nav.Item>
+
 
             <Nav.Item>
               <Nav.Link
@@ -102,16 +124,26 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            {/* <Nav.Item className="fork-btn">
-              <Button
-                href="https://github.com/19sajib/portfolio"
-                target="_blank"
-                className="fork-btn-inner"
+            
+            {/* Mail */}
+            <Nav.Item>
+              <Nav.Link
+                href="mailto:ishabhausahebpatil@gmail.com"
+                onClick={() => updateExpanded(false)}
               >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
-              </Button>
-            </Nav.Item> */}
+                <AiOutlineMail style={{ marginBottom: "2px" }} /> ishabhausahebpatil@gmail.com
+              </Nav.Link>
+            </Nav.Item>
+
+            {/* Phone */}
+            <Nav.Item>
+              <Nav.Link
+                href="tel:+91 8975795159"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlinePhone style={{ marginBottom: "2px" }} /> +91 8975795159
+              </Nav.Link>
+            </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Container>

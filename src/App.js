@@ -9,6 +9,8 @@ import {
 import Home from './pages/Home'
 import Skill from './pages/Skillset'
 import Project from './pages/Projects'
+import Education from './pages/Education'
+import WorkExperience from './pages/WorkExperience'
 import Resume from './pages/Resume'
 import Contact from './pages/Contact'
 
@@ -20,7 +22,8 @@ import ScrollToTop from "./components/ScrollToTop"
 import "./App.css";
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import "./EducationSection.css";
+import "./WorkExperience.css";
 function App() {
   const [load, upadateLoad] = useState(true);
 
@@ -42,6 +45,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/skillset" element={<Skill />} />
           <Route path="/project" element={<Project />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/work-experience" element={<WorkExperience />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Navigate to="/"/>} />

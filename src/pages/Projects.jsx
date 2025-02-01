@@ -4,7 +4,7 @@ import ProjectCard from "../components/Projects/ProjectCard";
 import Particle from "../components/Particle";
 import pg from "../assets/projects/pg.png";
 import project from "../assets/projects/project.jpeg";
-import lift from "../assets/projects/lift.png";
+import lift from "../assets/projects/Pro_Web_Ser.png";
 import krypto from "../assets/projects/krypto.png";
 import kickstart from "../assets/projects/kickstart.png";
 

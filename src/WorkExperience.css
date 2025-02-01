@@ -1,0 +1,223 @@
+/* --------- */
+/* Work Experience Section */
+/* --------- */
+.work-experience-section {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-image: var(--section-background-color);
+    color: white;
+  }
+  
+  .work-experience-section .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: var(--imp-text-color);
+  }
+  
+  .work-experience-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+    margin-bottom: 20px;
+    background-color: rgba(8, 40, 80, 0.8); /* Adjusted background for uniqueness */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .work-experience-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  }
+  
+  .work-experience-left {
+    flex: 1;
+    padding-right: 20px;
+    border-right: 2px solid rgba(0, 200, 200, 0.6); /* Different color for border */
+  }
+  
+  .work-experience-right {
+    flex: 2;
+    padding-left: 20px;
+  }
+  
+  .work-experience-role {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--imp-bold-text-color);
+  }
+  
+  /* Highlighting specific job titles */
+  .work-experience-role.highlight {
+    background-color: #ff9800; /* Highlight color */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .work-experience-company {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+  }
+  
+  .work-experience-duration {
+    font-size: 1rem;
+    color: #cccccc;
+    margin-bottom: 10px;
+  }
+  
+  .work-experience-right ul {
+    padding-left: 20px;
+  }
+  
+  .work-experience-right ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    list-style: disc;
+    color: #f0f0f0;
+  }
+  
+  /* --------- */
+  /* Education Section */
+  /* --------- */
+  .education-section {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-image: var(--section-background-color);
+    color: white;
+  }
+  
+  .education-section .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: var(--imp-text-color);
+  }
+  
+  .education-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+    margin-bottom: 20px;
+    background-color: rgba(5, 8, 40, 0.8); /* Adjusted background for uniqueness */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .education-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  }
+  
+  .education-left {
+    flex: 1;
+    padding-right: 20px;
+    border-right: 2px solid rgba(117, 0, 250, 0.6); /* Different color for border */
+  }
+  
+  .education-right {
+    flex: 2;
+    padding-left: 20px;
+  }
+  
+  .education-degree {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--imp-bold-text-color);
+  }
+  
+  .education-institution {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+  }
+  
+  .education-duration {
+    font-size: 1rem;
+    color: #cccccc;
+    margin-bottom: 10px;
+  }
+  
+  .education-right ul {
+    padding-left: 20px;
+  }
+  
+  .education-right ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    list-style: disc;
+    color: #f0f0f0;
+  }
+  
+  /* --------- */
+  /* Responsive Design */
+  /* --------- */
+  @media (max-width: 767px) {
+    /* Work Experience Item */
+    .work-experience-item {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    /* Left Side of Work Experience Item */
+    .work-experience-left {
+      border-right: none;
+      padding-right: 0;
+      padding-bottom: 20px;
+      border-bottom: 2px solid rgba(0, 200, 200, 0.6);
+    }
+  
+    /* Right Side of Work Experience Item */
+    .work-experience-right {
+      padding-left: 0;
+    }
+  
+    /* Role */
+    .work-experience-role {
+      font-size: 1.3rem;
+    }
+  
+    /* Company */
+    .work-experience-company {
+      font-size: 1rem;
+    }
+  
+    /* Education Item */
+    .education-item {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    /* Left Side of Education Item */
+    .education-left {
+      border-right: none;
+      padding-right: 0;
+      padding-bottom: 20px;
+      border-bottom: 2px solid rgba(117, 0, 250, 0.6);
+    }
+  
+    /* Right Side of Education Item */
+    .education-right {
+      padding-left: 0;
+    }
+  
+    /* Degree */
+    .education-degree {
+      font-size: 1.3rem;
+    }
+  
+    /* Institution */
+    .education-institution {
+      font-size: 1rem;
+    }
+  }
+  

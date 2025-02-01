@@ -4,7 +4,6 @@ import LaptopImg from "../../assets/home-main.svg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
-  AiOutlineTwitter
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
@@ -25,30 +24,30 @@ const About = () => {
                  and I'm from <span className="yellow"> Jalgaon , Maharashtra .</span>
                 <br />
                 <br />
-                I am pursuing Engineering degree in Computer Science and Engineering .
+                I am pursuing my Engineering from R.C.Patel Institute od Technology,Shirpur in Computer Stream.I had completed my Diploma From Government Polytechnic,Jalgaon
                 <br />
                 <br />
                   As a
                   <b className="yellow"> Full-Stack </b>developer,  
                   I enjoy tackling new challenges and continuously expanding my skillset.
                   <br />
-                  <br />I am proficient in
-                    <b className="yellow"> Java, </b>
-                    as well as have knowledge in programming languages such as C, Javascript, SQL,Spring,
-                  <b className="yellow"> PHP,Laravel,React.</b>
+                  <br />I am proficient in programming languages such as
+                    <b className="yellow"> Java,C,Javascript,SQL,Spring,MongoDB</b>
+                    
+                  <b className="yellow"> PHP,Laravel,React,Node.js,Tailwind CSS</b>
                   <br />
                   <br />
-                  I have a passion for working
-                  with <b className="yellow">Node.js, MongoDB,</b> and
+                  I am aslo working in 
+                  with <b className="yellow">FreeLancing</b> in which 
                   <i>
                     <b className="yellow">
                       {" "}
-                      modern Javascript libraries and frameworks
+                      I had created a website for bussinessman 
                     </b>
                   </i>
-                  &nbsp; like
+                   and 
                   <i>
-                    <b className="yellow"> React.js</b>
+                    <b className="yellow"> Hosted it LIVE</b>
                   </i>
                   <br />
                   <br />
@@ -57,6 +56,12 @@ const About = () => {
                     <b className="yellow"> Web Technologies and Products. </b>
                     as well as i also do 
                     <b className="yellow"> FreeLancing.</b>
+                  </i>
+                  I am also Contribute for 
+                  <i>
+                    <b className="yellow"> Open Source (HacktomberFest) </b>
+                    in that i have request for  
+                    <b className="yellow"> 4 Request are Accepted</b>
                   </i>
                   <br />
                   
@@ -86,17 +91,7 @@ const About = () => {
                       <AiFillGithub />
                     </a>
                   </li>
-                  <li className="social-icons">
-                    <a
-                      href="https://twitter.com/19sajib"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="icon-colour  home-social-icons"
-                      aria-label="twitter"
-                    >
-                      <AiOutlineTwitter />
-                    </a>
-                  </li>
+                  
                   <li className="social-icons">
                     <a
                       href="https://www.linkedin.com/in/isha-patil-0a2290213/"
