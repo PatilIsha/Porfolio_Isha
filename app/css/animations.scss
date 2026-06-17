@@ -1,0 +1,210 @@
+/* ===== Global niceties ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prevent horizontal scroll from wide decorative background SVGs on small
+   screens. `clip` (not `hidden`) avoids creating a scroll container, so the
+   sticky navbar keeps working. */
+body {
+  overflow-x: clip;
+}
+
+/* ===== Landing / scroll reveal ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(48px);
+  transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.reveal--visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ===== Preloader / loading animation ===== */
+body.preloading {
+  overflow: hidden;
+}
+
+.preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  background: radial-gradient(circle at 50% 40%, #131a3a 0%, #0d1224 60%, #0a0d1f 100%);
+  opacity: 1;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+.preloader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.preloader__logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: "Courier New", monospace;
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  animation: preloader-pulse 1.4s ease-in-out infinite;
+}
+
+.preloader__bracket {
+  color: #ec4899;
+}
+
+.preloader__name {
+  background: linear-gradient(90deg, #ec4899, #8b5cf6, #16f2b3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.preloader__ring {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.12);
+  border-top-color: #16f2b3;
+  border-right-color: #8b5cf6;
+  animation: preloader-spin 0.9s linear infinite;
+}
+
+@keyframes preloader-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.85;
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+}
+
+/* ===== Custom animated cursor ===== */
+.cursor-dot,
+.cursor-ring {
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  z-index: 100000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #16f2b3;
+  transform: translate(var(--x, -100px), var(--y, -100px)) translate(-50%, -50%);
+}
+
+.cursor-ring {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid rgba(236, 72, 153, 0.7);
+  transform: translate(var(--x, -100px), var(--y, -100px)) translate(-50%, -50%) scale(var(--scale, 1));
+  transition: opacity 0.3s ease, border-color 0.3s ease, background-color 0.3s ease, transform 0.12s ease;
+}
+
+.cursor-ring--hover {
+  --scale: 1.8;
+  border-color: #16f2b3;
+  background-color: rgba(22, 242, 179, 0.08);
+}
+
+.cursor-ring--click {
+  --scale: 0.7;
+}
+
+/* hide the native cursor only when the custom one is active (non-touch) */
+body.has-custom-cursor,
+body.has-custom-cursor * {
+  cursor: none !important;
+}
+
+body.has-custom-cursor input,
+body.has-custom-cursor textarea {
+  cursor: auto !important;
+}
+
+/* ===== Hover effects ===== */
+/* animated underline for navbar links */
+#navbar-default li a > div {
+  position: relative;
+  display: inline-block;
+}
+
+#navbar-default li a > div::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 0;
+  background: linear-gradient(to right, #ec4899, #8b5cf6);
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+#navbar-default li a:hover > div::after,
+#navbar-default li a.active-link > div::after {
+  width: 100%;
+}
+
+/* scroll progress bar */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  z-index: 100001;
+  background: linear-gradient(to right, #ec4899, #8b5cf6, #16f2b3);
+  box-shadow: 0 0 10px rgba(139, 92, 246, 0.6);
+  transition: width 0.1s linear;
+}
+
+/* gentle lift on the glow cards (experience / education / certifications) */
+.glow-card {
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.3s ease;
+}
+
+.glow-card:hover {
+  transform: translateY(-6px);
+}
+
+/* respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .preloader__logo,
+  .preloader__ring {
+    animation: none !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}

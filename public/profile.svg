@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="400" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0d1224"/>
+      <stop offset="1" stop-color="#0a0d37"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="90" y1="120" x2="320" y2="250" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ec4899"/>
+      <stop offset="0.5" stop-color="#8b5cf6"/>
+      <stop offset="1" stop-color="#16f2b3"/>
+    </linearGradient>
+    <linearGradient id="border" x1="0" y1="0" x2="400" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ec4899"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="6" y="6" width="388" height="388" rx="28" fill="url(#bg)" stroke="url(#border)" stroke-width="2"/>
+
+  <!-- decorative dot grids -->
+  <g fill="#272a47">
+    <circle cx="40" cy="40" r="3"/><circle cx="58" cy="40" r="3"/><circle cx="76" cy="40" r="3"/>
+    <circle cx="40" cy="58" r="3"/><circle cx="58" cy="58" r="3"/><circle cx="76" cy="58" r="3"/>
+    <circle cx="40" cy="76" r="3"/><circle cx="58" cy="76" r="3"/><circle cx="76" cy="76" r="3"/>
+    <circle cx="324" cy="360" r="3"/><circle cx="342" cy="360" r="3"/><circle cx="360" cy="360" r="3"/>
+    <circle cx="324" cy="342" r="3"/><circle cx="342" cy="342" r="3"/><circle cx="360" cy="342" r="3"/>
+    <circle cx="324" cy="324" r="3"/><circle cx="342" cy="324" r="3"/><circle cx="360" cy="324" r="3"/>
+  </g>
+
+  <!-- accent corner brackets -->
+  <path d="M300 44 h40 v40" stroke="#16f2b3" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.8"/>
+  <path d="M100 356 h-40 v-40" stroke="#ec4899" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.8"/>
+
+  <!-- code glyph -->
+  <text x="200" y="212" font-family="'Courier New', monospace" font-size="130" font-weight="700" fill="url(#accent)" text-anchor="middle">&lt;/&gt;</text>
+
+  <!-- captions -->
+  <text x="200" y="272" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" letter-spacing="7" fill="#16f2b3" text-anchor="middle">FULL STACK</text>
+  <text x="200" y="304" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" letter-spacing="9" fill="#ffffff" text-anchor="middle">DEVELOPER</text>
+</svg>
